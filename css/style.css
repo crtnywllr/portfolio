@@ -25,27 +25,57 @@
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+}
 ul {
     list-style-type: none;
 }
+/*font-family: 'Quicksand', sans-serif;
+font-family: 'EB Garamond', serif;*/
 
 /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
+.top-navigation {
+    height: 4rem;
+    /*position: fixed;*/
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Quicksand', sans-serif;
+}
+.top-navigation .content {
+   padding: 1rem 1rem;
+}
 .content .links li {
     float: right;
+    margin-left: 1.5rem;
 }
 
 /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
 .introduction {
-   /* background-image: */
-   background-color: LightGrey;
-   height: 10rem;
+   background-image: url(http://tinyurl.com/hqzqrq9);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /*filter: blur(3px);*/
+   /*background-color: LightGrey;*/
+   height: 35rem;
    text-align: center;
-   overflow: auto;
+   overflow: auto
+}
+.introduction button {
+    margin: 20rem auto;
+    width: 10rem;
+    background-color: #fff
+    text-shadow: none;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 4px;
+
 }
 .profile .content p,
 .profile .content h2 {
