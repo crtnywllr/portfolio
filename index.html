@@ -4,62 +4,87 @@
 <head>
     <link rel='stylesheet' href="css/font-awesome.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300|EB+Garamond' rel='stylesheet' type='text/css'>
-    <link rel='normalize' href="css/normalize.css" />
-    <link rel='stylesheet' href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class='top-navigation'>
-        <div class="nav-bar">
-            <ul class="links">
-                <li>PROFILE</li>
-                <li>PORTFOLIO</li>
-                <li class='active'>CONTACT</li>
-            </ul>
-            <h1>COURTNEY WALLER</h1>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="images/icon.jpg"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
     <section class='introduction'>
-        <div class="content">
-            <div class="intro-box">
-                <h1>You have a purpose.</h1>
-                <p>Be Seen.</p>
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div>
+                    <h1>Hi, I'm Courtney Waller</h1>
+                    <h3>I am a freelance front end web developer and Front End Web Development Career Path student at Thinkful. </h3>
+                    <h3>I love building<span style="color: #F42121"><em> smart, clean and fun</em></span> websites.</h3>
+                </div>
             </div>
         </div>
     </section>
-    <section class='profile'>
-        <div class="content">
-            <h2>About Me</h2>
 
-            <p>Text about me will go here</p>
-
-            <img height="300" width="300" src="https://image.freepik.com/free-icon/super-simple-avatar_318-1018.jpg" alt="Profile Picture" />
-        </div>
-
-    </section>
 
     <section class="portfolio">
-        <div class="content">
-            <h1>Portfolio</h1>
-            <ul class="work">
-                <li>
-                    <img src="https://img1.wsimg.com/Sitecore/B/8/website-builder-facebook-illu-02-v02.png">
-                </li>
-                <li>
-                    <img src="https://img1.wsimg.com/Sitecore/B/8/website-builder-facebook-illu-02-v02.png">
-                </li>
-                <li>
-                    <img src="https://img1.wsimg.com/Sitecore/B/8/website-builder-facebook-illu-02-v02.png">
-                </li>
-            </ul>
+        <div>
+            <h4>Selected Works</h4>
         </div>
+        <div class="work1">
+            <img src="images/quiz-app.png">
+        </div>
+        <div class="work2">
+            <img src="images/shopping-list-shot.png">
+        </div>
+        <div class="work3">
+            <img src="images/Streetfighter%20shot.png">
+        </div>
+        <section class='profile'>
+            <div class="about-me">
+                <h2>About Me</h2>
+
+                <p>Text about me will go here</p>
+
+                <img src="images/profile-image.JPG" alt="Profile Picture" />
+            </div>
+
+        </section>
     </section>
 
     <footer class="social">
         <p>Footer with social media icons</p>
-    </footer>
+    </footer>-->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

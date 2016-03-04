@@ -25,7 +25,8 @@
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {
+
+/*body {
     font-family: 'EB Garamond', serif;
     font-size: 16px;
 }
@@ -39,7 +40,7 @@ ul {
 }
 
 
-/*font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', sans-serif;
 font-family: 'EB Garamond', serif;*/
 
 
@@ -47,31 +48,12 @@ font-family: 'EB Garamond', serif;*/
     (all the styles inside the < header > or < nav > tags)
 */
 
-.top-navigation {
-    height: 4rem;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
+.navbar {
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    font-family: 'Quicksand', sans-serif;
 }
 
-.top-navigation .nav-bar {
-    padding: 1rem 1rem;
-}
-
-.nav-bar .links li {
-    float: right;
-    margin-left: 1.5rem;
-}
-
-.active {
-    color: #FE6E38;
-}
-
-.top-navigation h1 {
-    font-size: 200%;
+.navbar-brand img {
+    width: 8rem;
 }
 
 
@@ -80,57 +62,50 @@ font-family: 'EB Garamond', serif;*/
 */
 
 .introduction {
-    background-image: url(https://unsplash.com/photos/YIN4xUBaqnk/download);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    /*filter: blur(3px);*/
-    height: 40rem;
-    text-align: center;
-    overflow: hidden;
+    margin-top: 11rem;
+    clear: both;
+    height: 25rem;
+    text-align: left;
 }
 
-.intro-box {
-    margin: 27rem auto;
-    width: 25rem;
-    height: 12.5rem;
-    background-color: #fff;
-    border: none;
-    text-shadow: none;
-    opacity: 0.9;
-    text-align: center;
-    border-radius: 12px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 200%;
+.portfolio {
+    clear: both;
 }
 
-.introduction .intro-button > p {
-    margin-top: 1rem;
+.portfolio .work1,
+.portfolio .work2,
+.portfolio .work3 {
+    height: 30rem;
 }
 
-
-/*.introduction button {
-    margin: 20rem auto;
-    width: 15rem;
-    height: 10rem;
-    background-color: #fff;
-    border: none;
-    text-shadow: none;
-    opacity: 0.9;
-    text-align: center;
-    border-radius: 12px;
-    font-family: 'Quicksand', sans-serif;
-
-}*/
-
-.profile .content p,
-.profile .content h2 {
-    float: right;
+.portfolio .work1 img,
+.portfolio .work2 img,
+.portfolio .work3 img {
+    height: 20rem;
+    margin-top: 5rem;
 }
 
-.portfolio .work > li {
-    display: inline-block;
-    width: 33%;
+.portfolio .work1 {
+    background-color: #FF4C1B;
+    text-align: right;
+}
+
+.portfolio .work2 {
+    background-color: #FF8D65;
+    text-align: left;
+}
+
+.portfolio .work3 {
+    background-color: #F42121;
+    text-align: right;
+}
+
+.profile {
+    height: 20rem;
+}
+
+.profile .about-me img {
+    width: 10%;
 }
 
 
