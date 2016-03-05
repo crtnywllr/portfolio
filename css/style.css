@@ -1,0 +1,166 @@
+    /* CSS reset
+    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+        box-sizing: border-box;
+        /*reset Chrome user agent styles*/
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-before: 0px;
+        -webkit-padding-after: 0px;
+        -webkit-padding-start: 0px;
+        -webkit-padding-end: 0px;
+    }
+    /* General styles
+    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+    body {
+        font-family: 'Slabo 13px', serif;
+        font-size: 16px;
+        background-image: url(../images/color-overlay.jpg);
+    }
+    /*.content {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+font-family: 'Quicksand', sans-serif;
+font-family: 'EB Garamond', serif;*/
+    /* Header styles
+    (all the styles inside the < header > or < nav > tags)
+*/
+
+    .navbar {
+        background-image: url(../images/color-overlay.jpg);
+    }
+
+    .navbar-brand img {
+        width: 8rem;
+    }
+
+    .navbar-default {
+        border: none;
+    }
+    /* Content styles
+    (all the styles inside the < sections > or < aside > tags)
+*/
+
+    .jumbotron {
+        background-image: url(../images/ballons.jpg);
+        height: 70rem;
+        background-size: cover;
+        background-position: top;
+        text-transform: uppercase;
+    }
+
+    .jumbotron .stand {
+        margin-top: 14rem;
+        color: #3785A8;
+    }
+
+    .jumbotron h3 {
+        font-size: 7.5rem;
+        text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    }
+
+    .introduction {
+        margin-top: 11rem;
+        clear: both;
+        height: 35rem;
+        text-align: left;
+    }
+
+    .text {
+        font-family: 'Ultra', serif;
+    }
+
+    .introduction h1 {
+        margin-bottom: 9rem;
+    }
+
+    .introduction h3 {
+        margin-top: 3rem;
+    }
+
+    .introduction a.thinkful {
+        color: #6799FF;
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .portfolio {
+        clear: both;
+    }
+
+    .portfolio .work1,
+    .portfolio .work2,
+    .portfolio .work3 {
+        height: 40rem;
+    }
+
+    .portfolio .work1 img,
+    .portfolio .work2 img,
+    .portfolio .work3 img {
+        height: 30rem;
+        margin-top: 5rem;
+    }
+
+    .portfolio .work1 {
+        background-image: url(../images/work1.jpg);
+        text-align: right;
+    }
+
+    .portfolio .work2 {
+        background-image: url(../images/work2.jpg);
+        text-align: left;
+    }
+
+    .portfolio .work3 {
+        background-image: url(../images/work3.jpg);
+        text-align: right;
+    }
+
+    .portfolio .work3 .thumbnail img {
+        width: 8rem;
+    }
+
+    .skills li {
+        display: inline-block;
+    }
+
+    .skills li>img {
+        width: 1rem;
+    }
+
+    .profile {
+        height: 20rem;
+    }
+
+    .profile .about-me img {
+        width: 10%;
+    }
+    /* Footer styles
+    (all the styles inside the < footer > tag)
+*/
+
+    footer {
+        background-color: LightGrey;
+        height: 10rem;
+        text-align: center;
+    }
+    /* Responsive styles
+    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
