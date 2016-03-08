@@ -28,17 +28,10 @@
         font-size: 16px;
         background-image: url(../images/color-overlay.jpg);
     }
-    /*.content {
-    text-align: center;
-}
 
-ul {
-    list-style-type: none;
-}
-
-
-font-family: 'Quicksand', sans-serif;
-font-family: 'EB Garamond', serif;*/
+    .text {
+        font-family: 'UniqueRegular', serif;
+    }
     /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
@@ -48,7 +41,7 @@ font-family: 'EB Garamond', serif;*/
     }
 
     .navbar-brand img {
-        width: 8rem;
+        width: 3rem;
     }
 
     .navbar-default {
@@ -57,8 +50,9 @@ font-family: 'EB Garamond', serif;*/
     /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
+    /*Jumbotron Styles*/
 
-    .jumbotron {
+    .hero .jumbotron {
         background-image: url(../images/ballons.jpg);
         height: 70rem;
         background-size: cover;
@@ -66,33 +60,35 @@ font-family: 'EB Garamond', serif;*/
         text-transform: uppercase;
     }
 
-    .jumbotron .stand {
+    .hero .jumbotron .stand {
         margin-top: 14rem;
         color: #3785A8;
     }
 
-    .jumbotron h3 {
+    .hero .jumbotron h3 {
         font-size: 7.5rem;
-        text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+        text-shadow: 2px 2px 1px #c0c0c0, -2px -2px 1px #c0c0c0, -2px 2px 1px #c0c0c0, 2px -2px 1px #c0c0c0;
     }
+
+    .hero .fa-chevron-down {
+        font-size: 5rem;
+        color: #3785A8;
+    }
+    /*Intro Styles*/
 
     .introduction {
         margin-top: 11rem;
         clear: both;
-        height: 35rem;
+        height: 40rem;
         text-align: left;
     }
 
-    .text {
-        font-family: 'Ultra', serif;
-    }
-
     .introduction h1 {
-        margin-bottom: 9rem;
+        margin-bottom: 6rem;
     }
 
     .introduction h3 {
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .introduction a.thinkful {
@@ -101,65 +97,76 @@ font-family: 'EB Garamond', serif;*/
         font-family: "Open Sans", sans-serif;
     }
 
+    .introduction .circle {
+        border-radius: 50%;
+        width: 25rem;
+        -webkit-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
+    }
+    /*Portfolio Styles*/
+
     .portfolio {
         clear: both;
+        margin-top: 11rem;
+        text-align: center;
+        margin-bottom: 11rem;
     }
 
-    .portfolio .work1,
-    .portfolio .work2,
-    .portfolio .work3 {
+    .portfolio h4 {
+        font-size: 2.5rem;
+    }
+
+    .box {
         height: 40rem;
+        background-color: #FAF9F7;
     }
 
-    .portfolio .work1 img,
-    .portfolio .work2 img,
-    .portfolio .work3 img {
-        height: 30rem;
-        margin-top: 5rem;
+    .bg1 {
+        background-color: #3886AA;
     }
 
-    .portfolio .work1 {
-        background-image: url(../images/work1.jpg);
-        text-align: right;
+    .bg2 {
+        background-color: #1F7E7A;
     }
 
-    .portfolio .work2 {
-        background-image: url(../images/work2.jpg);
-        text-align: left;
+    .portfolio img {
+        margin-top: 2rem;
+        max-width: 60%;
+        max-height: 40rem;
     }
 
-    .portfolio .work3 {
-        background-image: url(../images/work3.jpg);
-        text-align: right;
+    .portfolio .logo {
+        width: 10rem;
+    }
+    /*Talk Styles*/
+
+    .contact-form {
+        height: 50rem;
     }
 
-    .portfolio .work3 .thumbnail img {
-        width: 8rem;
-    }
-
-    .skills li {
-        display: inline-block;
-    }
-
-    .skills li>img {
-        width: 1rem;
-    }
-
-    .profile {
+    #message {
         height: 20rem;
-    }
-
-    .profile .about-me img {
-        width: 10%;
     }
     /* Footer styles
     (all the styles inside the < footer > tag)
 */
 
     footer {
-        background-color: LightGrey;
+        background-color: #c4c4cf;
+        color: #faf9f7;
         height: 10rem;
         text-align: center;
+    }
+
+    footer a {
+        color: #faf9f7;
+        text-decoration: none;
+    }
+
+    footer .fa {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
     }
     /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
