@@ -1,2 +1,0 @@
-Portfolio Issue:
-Hamburger menu not working (click icon, no menu appears)
