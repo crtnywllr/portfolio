@@ -53,7 +53,7 @@
     /*Jumbotron Styles*/
 
     .hero .jumbotron {
-        background-image: url(../images/ballons.jpg);
+        background-image: url(../images/balloons-min.jpg);
         height: 70rem;
         background-size: cover;
         background-position: top;
@@ -110,14 +110,16 @@
 
     .portfolio {
         clear: both;
-        margin-top: 18rem;
         text-align: center;
-        margin-bottom: 4rem;
         color: #FAF9F7;
+        margin-top: 18rem;
     }
 
     .box {
-        min-height: 20rem;
+        height: 54rem;
+        text-shadow: -2px 4px 4px rgba(150, 150, 150, 1);
+        padding-bottom: 4rem;
+        padding-top: 12rem;
     }
 
     .box h2 {
@@ -125,7 +127,6 @@
     }
 
     .box h4 {
-        margin-top: 3rem;
         min-height: 8rem;
     }
 
@@ -133,43 +134,55 @@
         min-height: 36rem;
     }
 
-    .portfolio img {
-        max-width: 100%;
-        height: 20rem;
-        border: 2px solid #c0c0c0;
-        margin-bottom: 1.5rem;
+    .portfolio .expand {
+        margin-top: 10rem;
     }
 
-    .box p {
-        margin-top: 1.5rem;
+    .portfolio .contract {
+        margin-top: 20rem;
+    }
+
+    .screenshot {
+        max-height: 60rem;
     }
 
     #shoppingList {
-        background-color: #3785A8;
+        background: rgba(35, 133, 168, 0.6);
     }
 
     #quizApp {
-        background-color: #85B2C9;
+        background: rgba(133, 178, 201, 0.8);
     }
 
     #apiHack {
-        background-color: #3FB88E;
+        background: rgba(63, 184, 142, 0.7);
     }
 
     #hotCold {
-        background-color: #21827E;
+        background: rgba(33, 130, 126, 0.6);
     }
 
-    .bg1 {
-        background-color: #3886AA;
-        color: #FAF9F7;
-        opacity: 0.8;
+    #shoppingListImage {
+        border: 10px solid rgba(35, 133, 168, 0.6);
+        margin-bottom: 7rem;
     }
 
-    .bg2 {
-        background-color: #1F7E7A;
-        color: #FAF9F7;
-        opacity: 0.8;
+    #quizAppImage {
+        border: 10px solid rgba(133, 178, 201, 0.8);
+        margin-bottom: 7rem;
+        margin-top: -1px;
+    }
+
+    #apiHackImage {
+        border: 10px solid rgba(63, 184, 142, 0.7);
+        margin-bottom: 7rem;
+        margin-top: -2px;
+    }
+
+    #hotColdImage {
+        border: 10px solid rgba(33, 130, 126, 0.6);
+        margin-bottom: 7rem;
+        margin-top: -3px;
     }
 
     .portfolio button {
@@ -178,26 +191,32 @@
 
     .portfolio .imgs,
     .portfolio .codeLinks,
-    .portfolio .lessDetailButton {
+    .portfolio .contract,
+    #shoppingListImage,
+    #quizAppImage,
+    #apiHackImage,
+    #hotColdImage {
         display: none;
     }
 
-    .portfolio .moreDetailButton button.btn,
-    .portfolio .lessDetailButton button.btn {
-        background-color: transparent;
+    .details h4,
+    .details h2,
+    .details .btn {
+        color: black;
+        margin-top: 7rem;
     }
 
-    .portfolio .moreDetailButton button.btn:hover,
-    .portfolio .lessDetailButton button.btn:hover {
-        color: #c0c0c0;
+    .details .btn {
+        background-color: #29a9df;
+        color: #faf9f7;
     }
 
-    .details .btn .btn-lg {
-        background-color: transparent;
+    .details a {
+        color: black;
     }
     /*Skills Styles*/
 
-    .skills .icons img {
+    .icons img {
         max-height: 10rem;
         width: 10rem;
         margin-top: 4rem;
@@ -216,6 +235,7 @@
 
     .contact-form {
         min-height: 60rem;
+        margin-top: 10rem;
     }
 
     .contact-form h2 {
@@ -263,15 +283,6 @@
     footer .fa {
         margin-right: 1.5rem;
         margin-top: 1rem;
-    }
-
-    .col-md-0 {
-        width: 0px;
-        float: left;
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
-        min-height: 1px;
     }
     /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)

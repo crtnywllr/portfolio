@@ -35,48 +35,45 @@ $(document).ready(function () {
 
     $('#shoppingList').on('click', function () {
         $('#shoppingList').toggleClass('col-md-3 col-md-12');
-        $('#quizApp').toggleClass('col-md-3 col-md-0');
-        $('#apiHack').toggleClass('col-md-3 col-md-0');
-        $('#hotCold').toggleClass('col-md-3 col-md-0');
-        $('.imgs').toggle();
-        $('.codeLinks').toggle();
-        // $('.moreDetailButton').toggle();
-        $('.lessDetailButton').toggle();
+        $('#quizApp').toggle();
+        $('#apiHack').toggle();
+        $('#hotCold').toggle();
+        $('.description').toggle();
+        $('.expand').toggle();
+        $('.contract').toggle();
+        $('#shoppingListImage').toggle();
 
 
     })
     $('#quizApp').on('click', function () {
         $('#quizApp').toggleClass('col-md-3 col-md-12');
-        $('#shoppingList').toggleClass('col-md-3 col-md-0');
-        $('#apiHack').toggleClass('col-md-3 col-md-0');
-        $('#hotCold').toggleClass('col-md-3 col-md-0');
+        $('#shoppingList').toggle();
+        $('#apiHack').toggle();
+        $('#hotCold').toggle();
         $('.description').toggle();
-        $('.codeLinks').toggle();
-        $('.moreDetailButton').toggle();
-        $('.lessDetailButton').toggle();
-        $('.screenshot').toggleClass('bigImg');
+        $('.expand').toggle();
+        $('.contract').toggle();
+        $('#quizAppImage').toggle();
     })
     $('#apiHack').on('click', function () {
         $('#apiHack').toggleClass('col-md-3 col-md-12');
-        $('#quizApp').toggleClass('col-md-3 col-md-0');
-        $('#shoppingList').toggleClass('col-md-3 col-md-0');
-        $('#hotCold').toggleClass('col-md-3 col-md-0');
+        $('#quizApp').toggle();
+        $('#shoppingList').toggle();
+        $('#hotCold').toggle();
         $('.description').toggle();
-        $('.codeLinks').toggle();
-        $('.moreDetailButton').toggle();
-        $('.lessDetailButton').toggle();
-        $('.screenshot').toggleClass('bigImg');
+        $('.expand').toggle();
+        $('.contract').toggle();
+        $('#apiHackImage').toggle();
     })
     $('#hotCold').on('click', function () {
         $('#hotCold').toggleClass('col-md-3 col-md-12');
-        $('#quizApp').toggleClass('col-md-3 col-md-0');
-        $('#apiHack').toggleClass('col-md-3 col-md-0');
-        $('#shoppingList').toggleClass('col-md-3 col-md-0');
+        $('#quizApp').toggle();
+        $('#apiHack').toggle();
+        $('#shoppingList').toggle();
         $('.description').toggle();
-        $('.codeLinks').toggle();
-        $('.moreDetailButton').toggle();
-        $('.lessDetailButton').toggle();
-        $('.screenshot').toggleClass('bigImg');
+        $('.expand').toggle();
+        $('.contract').toggle();
+        $('#hotColdImage').toggle();
     })
 
 })
