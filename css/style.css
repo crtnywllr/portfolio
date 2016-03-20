@@ -112,7 +112,7 @@
         clear: both;
         text-align: center;
         color: #FAF9F7;
-        margin-top: 18rem;
+        margin-top: 14rem;
     }
 
     .box {
@@ -122,12 +122,20 @@
         padding-top: 12rem;
     }
 
+    .boxShort {
+        height: 12rem;
+        text-shadow: -2px 4px 4px rgba(150, 150, 150, 1);
+    }
+    /*.boxShort h2 {
+        padding-top: 1rem;
+    }*/
+
     .box h2 {
         min-height: 7rem;
     }
 
     .box h4 {
-        min-height: 8rem;
+        min-height: 10rem;
     }
 
     .portfolio .info {
@@ -135,7 +143,7 @@
     }
 
     .portfolio .expand {
-        margin-top: 10rem;
+        margin-top: 7rem;
     }
 
     .portfolio .contract {
@@ -144,6 +152,7 @@
 
     .screenshot {
         max-height: 60rem;
+        width: 80%;
     }
 
     #shoppingList {

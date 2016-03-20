@@ -34,6 +34,7 @@ $(document).ready(function () {
     });
 
     $('#shoppingList').on('click', function () {
+        $('#shoppingList').toggleClass('box boxShort')
         $('#shoppingList').toggleClass('col-md-3 col-md-12');
         $('#quizApp').toggle();
         $('#apiHack').toggle();
@@ -46,6 +47,7 @@ $(document).ready(function () {
 
     })
     $('#quizApp').on('click', function () {
+        $('#quizApp').toggleClass('box boxShort')
         $('#quizApp').toggleClass('col-md-3 col-md-12');
         $('#shoppingList').toggle();
         $('#apiHack').toggle();
@@ -56,6 +58,7 @@ $(document).ready(function () {
         $('#quizAppImage').toggle();
     })
     $('#apiHack').on('click', function () {
+        $('#apiHack').toggleClass('box boxShort')
         $('#apiHack').toggleClass('col-md-3 col-md-12');
         $('#quizApp').toggle();
         $('#shoppingList').toggle();
@@ -66,6 +69,7 @@ $(document).ready(function () {
         $('#apiHackImage').toggle();
     })
     $('#hotCold').on('click', function () {
+        $('#hotCold').toggleClass('box boxShort')
         $('#hotCold').toggleClass('col-md-3 col-md-12');
         $('#quizApp').toggle();
         $('#apiHack').toggle();
