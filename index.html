@@ -2,11 +2,157 @@
 <html lang="en">
 
 <head>
-    <link rel='stylesheet' href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Slabo+13px|Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .navbar,
+        body {
+            background-image: url(../images/color-overlay.jpg)
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            box-sizing: border-box;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            -webkit-margin-start: 0;
+            -webkit-margin-end: 0;
+            -webkit-padding-before: 0;
+            -webkit-padding-after: 0;
+            -webkit-padding-start: 0;
+            -webkit-padding-end: 0
+        }
+
+        body {
+            font-family: 'Slabo 13px', serif;
+            font-size: 16px
+        }
+
+        .text {
+            font-family: UniqueRegular, serif
+        }
+
+        .navbar-brand img {
+            width: 3rem
+        }
+
+        .navbar-default {
+            border: none
+        }
+
+        .hero .jumbotron {
+            background-image: url(../images/balloons-min.jpg);
+            height: 70rem;
+            background-size: cover;
+            background-position: top;
+            text-transform: uppercase
+        }
+
+        .hero .jumbotron .stand {
+            margin-top: 14rem;
+            color: #3785A8
+        }
+
+        .hero .jumbotron h3 {
+            font-size: 7.5rem;
+            text-shadow: 2px 2px 1px silver, -2px -2px 1px silver, -2px 2px 1px silver, 2px -2px 1px silver
+        }
+
+        .hero .fa-chevron-down {
+            margin-top: 11.5rem;
+            font-size: 5rem;
+            color: #3785A8
+        }
+
+        .introduction {
+            margin-top: 11rem;
+            clear: both;
+            height: 40rem;
+            text-align: left
+        }
+
+        .introduction h1 {
+            margin-bottom: 6rem
+        }
+
+        .portfolio .contract {
+            margin-top: 20rem
+        }
+
+        .screenshot {
+            max-height: 60rem;
+            width: 80%
+        }
+
+        #shoppingListImage {
+            border: 10px solid rgba(35, 133, 168, .6);
+            margin-bottom: 7rem
+        }
+
+        #quizAppImage {
+            border: 10px solid rgba(133, 178, 201, .8);
+            margin-bottom: 7rem;
+            margin-top: -1px
+        }
+
+        #apiHackImage {
+            border: 10px solid rgba(63, 184, 142, .7);
+            margin-bottom: 7rem;
+            margin-top: -2px
+        }
+
+        #hotColdImage {
+            border: 10px solid rgba(33, 130, 126, .6);
+            margin-bottom: 7rem;
+            margin-top: -3px
+        }
+
+        .portfolio button {
+            color: #D25A33
+        }
+
+        #apiHackImage,
+        #hotColdImage,
+        #quizAppImage,
+        #shoppingListImage,
+        .portfolio .contract {
+            display: none
+        }
+
+        .details .btn,
+        .details h2,
+        .details h4 {
+            color: #000;
+            margin-top: 7rem
+        }
+
+        .details .btn {
+            background-color: #29a9df;
+            color: #faf9f7
+        }
+
+        .details a {
+            color: #000
+        }
+
+        .icons img {
+            max-height: 10rem;
+            width: 10rem;
+            margin-top: 4rem
+        }
+
+        hr {
+            border-color: silver;
+            border-image: none;
+            border-style: solid none none;
+            border-width: 3px 0 0;
+            margin: 1rem auto;
+            width: 60%;
+            clear: both
+        }
+    </style>
+
     <meta charset="UTF-8">
     <title>Portfolio</title>
 </head>
@@ -219,7 +365,7 @@
                                     <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
                                 </div>
                                 <div class="col-xs-3">
-                                    <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
+                                    <div class="icons col-xs-12"><img src="images/javascript.png" alt=""></div>
                                 </div>
                                 <div class="col-xs-3">
                                     <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
@@ -355,6 +501,11 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+13px|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
 </body>
 
 </html>
