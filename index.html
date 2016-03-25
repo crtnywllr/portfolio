@@ -2,157 +2,12 @@
 <html lang="en">
 
 <head>
-    <style>
-        .navbar,
-        body {
-            background-image: url(../images/color-overlay.jpg)
-        }
+    <link href='https://fonts.googleapis.com/css?family=Slabo+13px|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css" />
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            box-sizing: border-box;
-            -webkit-margin-before: 0;
-            -webkit-margin-after: 0;
-            -webkit-margin-start: 0;
-            -webkit-margin-end: 0;
-            -webkit-padding-before: 0;
-            -webkit-padding-after: 0;
-            -webkit-padding-start: 0;
-            -webkit-padding-end: 0
-        }
-
-        body {
-            font-family: 'Slabo 13px', serif;
-            font-size: 16px
-        }
-
-        .text {
-            font-family: UniqueRegular, serif
-        }
-
-        .navbar-brand img {
-            width: 3rem
-        }
-
-        .navbar-default {
-            border: none
-        }
-
-        .hero .jumbotron {
-            background-image: url(../images/balloons-min.jpg);
-            height: 70rem;
-            background-size: cover;
-            background-position: top;
-            text-transform: uppercase
-        }
-
-        .hero .jumbotron .stand {
-            margin-top: 14rem;
-            color: #3785A8
-        }
-
-        .hero .jumbotron h3 {
-            font-size: 7.5rem;
-            text-shadow: 2px 2px 1px silver, -2px -2px 1px silver, -2px 2px 1px silver, 2px -2px 1px silver
-        }
-
-        .hero .fa-chevron-down {
-            margin-top: 11.5rem;
-            font-size: 5rem;
-            color: #3785A8
-        }
-
-        .introduction {
-            margin-top: 11rem;
-            clear: both;
-            height: 40rem;
-            text-align: left
-        }
-
-        .introduction h1 {
-            margin-bottom: 6rem
-        }
-
-        .portfolio .contract {
-            margin-top: 20rem
-        }
-
-        .screenshot {
-            max-height: 60rem;
-            width: 80%
-        }
-
-        #shoppingListImage {
-            border: 10px solid rgba(35, 133, 168, .6);
-            margin-bottom: 7rem
-        }
-
-        #quizAppImage {
-            border: 10px solid rgba(133, 178, 201, .8);
-            margin-bottom: 7rem;
-            margin-top: -1px
-        }
-
-        #apiHackImage {
-            border: 10px solid rgba(63, 184, 142, .7);
-            margin-bottom: 7rem;
-            margin-top: -2px
-        }
-
-        #hotColdImage {
-            border: 10px solid rgba(33, 130, 126, .6);
-            margin-bottom: 7rem;
-            margin-top: -3px
-        }
-
-        .portfolio button {
-            color: #D25A33
-        }
-
-        #apiHackImage,
-        #hotColdImage,
-        #quizAppImage,
-        #shoppingListImage,
-        .portfolio .contract {
-            display: none
-        }
-
-        .details .btn,
-        .details h2,
-        .details h4 {
-            color: #000;
-            margin-top: 7rem
-        }
-
-        .details .btn {
-            background-color: #29a9df;
-            color: #faf9f7
-        }
-
-        .details a {
-            color: #000
-        }
-
-        .icons img {
-            max-height: 10rem;
-            width: 10rem;
-            margin-top: 4rem
-        }
-
-        hr {
-            border-color: silver;
-            border-image: none;
-            border-style: solid none none;
-            border-width: 3px 0 0;
-            margin: 1rem auto;
-            width: 60%;
-            clear: both
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8">
     <title>Portfolio</title>
 </head>
@@ -174,9 +29,9 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#intro">Profile</a></li>
-                        <li><a href="#works">Portfolio</a></li>
-                        <li><a href="#contact"><span style="color: #D25A33">Contact</span></a></li>
+                        <li><a id="profileLink" href="#intro">Profile</a></li>
+                        <li><a id="portfolioLink" href="#works">Portfolio</a></li>
+                        <li><a id="contactLink" href="#contact"><span style="color: #D25A33">Contact</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -194,7 +49,7 @@
                 </div>
                 <div class="down col-xs-4 col-xs-offset-4 text-center">
                     <a href="#intro">
-                        <i class="fa fa-chevron-down"></i>
+                        <i id="toProfile" class="fa fa-chevron-down"></i>
 
                     </a>
                 </div>
@@ -205,7 +60,7 @@
 
     <a id="intro"> </a>
     <section id="profile" class='introduction'>
-        <div class="container-fluid text-center col-xs-8 col-xs-offset-2">
+        <div class="about container-fluid text-center col-xs-8 col-xs-offset-2">
 
             <h1 class="text"><span style="color: #737373">Hi, I'm Courtney Waller.</span></h1>
             <img class="circle" src="images/profile-image.JPG" alt="Profile picture" />
@@ -250,9 +105,10 @@
     </section>
     <a id="works"></a>
     <section class="portfolio">
-        <div class="container-fluid col-md-10 col-md-offset-1 ">
+        <div class="container-fluid col-md-10 col-md-offset-1">
             <h2 class="text-uppercase"><span style="color: black">Selected Works</span></h2>
             <div id='shoppingList' class="box col-md-3">
+
                 <div class="info ">
                     <h2>Shopping List App</h2>
                     <div class="description ">
@@ -260,14 +116,15 @@
 
                         <h4>Skills: HTML5, CSS3, jQuery</h4>
                     </div>
-                    <i class='fa fa-3x fa-chevron-down expand'></i>
-                    <i class='fa fa-3x fa-chevron-up contract'></i>
+                    <i class='fa fa-2x fa-ellipsis-h'></i>
+                    <i class='fa fa-3x  fa-angle-double-up contract'></i>
 
                 </div>
             </div>
 
 
             <div id="quizApp" class="box col-md-3 ">
+
                 <div class="info ">
                     <h2>Where in the World Are You? Quiz</h2>
                     <div class="description ">
@@ -275,33 +132,35 @@
 
                         <h4>Skills: HTML5, CSS3, jQuery, Object Oriented JS</h4>
                     </div>
-                    <i class='fa fa-3x fa-chevron-down expand'></i>
-                    <i class='fa fa-3x fa-chevron-up contract'></i>
+                    <i class='fa fa-2x fa-ellipsis-h'></i>
+                    <i class='fa fa-3x  fa-angle-double-up contract'></i>
                 </div>
             </div>
 
 
             <div id="apiHack" class="box col-md-3 ">
+
                 <div class="info">
                     <h2>LearnIt Api Hack</h2>
                     <div class="description">
                         <h4>Combining API data pulled from GoogleMaps, YouTube, GoogleBooks, and Meetup to give users a one stop reference shop for learning a new subject.</h4>
                         <h4>Skills: HTML5, CSS3, Bootstrap, jQuery, AJAX</h4>
                     </div>
-                    <i class='fa fa-3x fa-chevron-down expand'></i>
-                    <i class='fa fa-3x fa-chevron-up contract'></i>
+                    <i class='fa fa-2x fa-ellipsis-h'></i>
+                    <i class='fa fa-3x  fa-angle-double-up contract'></i>
                 </div>
             </div>
 
             <div id="hotCold" class="box col-md-3 ">
+
                 <div class="info">
                     <h2>HotOrCold</h2>
                     <div class="description">
                         <h4>Creating functionality for an interactive game where users enter guesses and receive feedback on reaching a hidden secret number.</h4>
                         <h4>Skills: HTML5, CSS3, jQuery</h4>
                     </div>
-                    <i class='fa fa-3x fa-chevron-down expand'></i>
-                    <i class='fa fa-3x fa-chevron-up contract'></i>
+                    <i class='fa fa-2x fa-ellipsis-h'></i>
+                    <i class='fa fa-3x  fa-angle-double-up contract'></i>
                 </div>
             </div>
 
@@ -309,6 +168,7 @@
         </div>
         <div class="container-fluid text-center col-md-10 col-md-offset-1">
             <div id="shoppingListImage">
+
                 <div class="row">
                     <div class="col-md-6">
                         <img class="screenshot " src="images/shopping.png " alt=" ">
@@ -464,30 +324,43 @@
     </section>
     <hr>
     <a id="contact"></a>
-    <section id="contactForm" class='contact-form'>
+    <section id="contactForm" class="contact-form">
 
         <div class="container-fluid">
-
             <div class="col-md-8 col-md-offset-2">
-                <h2>Let's <span style="font-family: 'UniqueRegular'"><a href="mailto:wllr.crtny.jyc@gmail.com" target="_blank">TALK</a></span> - code, new opportunities, or anything else on your mind!</h2>
-                <form role="form">
-                    <div class="form-group">
-                        <label for="Name">Name</label>
-                        <input type="text" class="form-control" id="name">
-
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="msg">Your words</label>
-                        <textarea class="form-control" rows="3" id="message"></textarea>
-                    </div>
-
-                    <button type="submit" class="sendButton btn btn-default">Send</button>
-                    <div id="msgSubmit" class="h3 text-center hidden">Thanks for sending your message!</div>
-                </form>
+                <h2>Let's <span><a href="mailto:wllr.crtny.jyc@gmail.com" target="_blank">TALK</a></span> - code, new opportunities, or anything else on your mind!</h2>
+                <div class='contactFormContent'>
+                    <form role="form" method="post" action="contact.php">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">Your words</label>
+                            <textarea class="form-control" rows="3" id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="sendButton btn btn-default col-md-2 col-md-offset-5">Send</button>
+                        </div>
+                        <div class="form-group">
+                            <div id="msgSubmit" class="h3 text-center hidden">Thanks for sending your message!</div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+
+        <!-- fadeIn animated" style="visibility: visible; animation-name: fadeIn;
+        fadeIn" style="visibility: hidden; animation-name: none;">-->
+
 
 
     </section>
@@ -498,14 +371,13 @@
         <a href="https://plus.google.com/111153016230742885730/about" target="_blank"><i class="fa fa-2x  fa-google-plus-square"></i></a>
         <a href="mailto:wllr.crtny.jyc@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope"></i></a>
     </footer>
+
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>`
+    <script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Slabo+13px|Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" />
+
 </body>
 
 </html>
